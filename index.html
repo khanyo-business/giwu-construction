@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Giwu Construction (Ltd) Pty</title>
+  <meta name="description" content="Giwu Construction — Building, Civil, Fencing, Renovations, Supply of goods & professional quantity surveying services." />
+  <style>
+    :root{
+      --bg:#f4f7f5;
+      --muted:#6b7280;
+      --giwu-green:#0b5d3b; /* from PDF dark green */
+      --accent:#f2c94c; /* soft gold */
+      --dark:#132018;
+      --card:#ffffff;
+      --maxw:1100px;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111}
+    header{background:linear-gradient(90deg,var(--dark),#0f2b22);color:white;padding:18px}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:8px;background:var(--giwu-green);display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:900;font-size:20px}
+    nav{margin-left:auto}
+    a.navlink{color:#fff;text-decoration:none;margin-left:14px;font-weight:700}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:48px 16px}
+    .eyebrow{color:var(--accent);font-weight:800}
+    h1{font-size:34px;margin:0}
+    p.lead{color:var(--muted);max-width:720px}
+    .button{background:var(--giwu-green);color:var(--accent);padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+
+    section{padding:36px 16px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 20px rgba(18,18,18,0.06)}
+
+    .grid{display:grid;gap:18px}
+    .cols-3{grid-template-columns:repeat(3,1fr)}
+    .cols-2{grid-template-columns:repeat(2,1fr)}
+
+    .service{display:flex;gap:12px;align-items:flex-start}
+    .service .icon{width:56px;height:56;border-radius:8px;background:#eef6ef;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--giwu-green)}
+    .muted{color:var(--muted)}
+
+    .projects img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+
+    footer{background:var(--dark);color:#d1e7da;padding:24px;text-align:center}
+
+    /* contact */
+    .contact-list{list-style:none;padding:0;margin:0}
+    .contact-list li{margin-bottom:8px}
+
+    @media(min-width:900px){
+      .hero{grid-template-columns:1fr 420px}
+      h1{font-size:44px}
+      .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+      .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    }
+
+    a.whatsapp{background:#25D366;color:white;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center;gap:14px;">
+      <div class="brand">
+        <div class="logo">G</div>
+        <div>
+          <div style="font-weight:900">Giwu Construction (Ltd) Pty</div>
+          <div style="font-size:13px;color:#d1e7da">Building • Civil • Renovations • Supply & Professional Services</div>
+        </div>
+      </div>
+      <nav>
+        <a class="navlink" href="#home">Home</a>
+        <a class="navlink" href="#about">About</a>
+        <a class="navlink" href="#vision">Vision</a>
+        <a class="navlink" href="#services">Services</a>
+        <a class="navlink" href="#structure">Org</a>
+        <a class="navlink" href="#projects">Projects</a>
+        <a class="navlink" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="container hero card" style="margin-top:16px">
+      <div>
+        <div class="eyebrow">You Dream It. We Build It.</div>
+        <h1>Giwu Construction — Trusted. Compliant. Precise.</h1>
+        <p class="lead">Giwu Construction (Pty) Ltd is a 100% black woman-owned construction company (BBBEE Level 1) delivering building, civil, fencing, renovation and professional quantity surveying services across the Western Cape. We prioritise safety, value and transparent communication.</p>
+        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="button" href="#contact">Request a Quote</a>
+          <a class="whatsapp" href="https://wa.me/27621949803" target="_blank">WhatsApp Us</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div class="card"><strong>BBBEE Level 1</strong><div class="muted">100% black woman-owned company.</div></div>
+        <div class="card"><strong>Compliance & Safety</strong><div class="muted">Construction health & safety professionals and licensed staff.</div></div>
+      </div>
+    </div>
+
+    <section id="about" class="container">
+      <div class="card">
+        <h2>About Giwu Construction</h2>
+        <p class="muted">Founded in 2021 by Nolukhanyo Ngceni, Giwu Construction brings together expertise in project management, quantity surveying, construction health & safety, and on-site supervision. Our mission is to manage projects efficiently, deliver excellent value, and maintain the highest professional standards.</p>
+      </div>
+    </section>
+
+    <section id="vision" class="container">
+      <div class="card">
+        <h2>Vision, Mission & Values</h2>
+        <h3>Vision</h3>
+        <p class="muted">Developing, building, and servicing South Africa's requirements for better living and working conditions.</p>
+        <h3>Mission</h3>
+        <p class="muted">To manage projects efficiently and effectively while prioritising safety and client satisfaction.</p>
+        <h3>Values</h3>
+        <p class="muted">Integrity • Passion • Commitment • Transparency</p>
+      </div>
+    </section>
+
+    <section id="services" class="container">
+      <h2>Our Services</h2>
+      <div class="grid cols-3" style="margin-top:12px">
+        <div class="card service">
+          <div class="icon">BC</div>
+          <div>
+            <h3>Building Construction</h3>
+            <p class="muted">Complete residential and commercial building projects from foundation to finish.</p>
+          </div>
+        </div>
+
+        <div class="card service">
+          <div class="icon">CC</div>
+          <div>
+            <h3>Civil Construction</h3>
+            <p class="muted">Earthworks, site preparation, drainage and other civil works.</p>
+          </div>
+        </div>
+
+        <div class="card service">
+          <div class="icon">F</div>
+          <div>
+            <h3>Fencing Construction</h3>
+            <p class="muted">Palisade, chainlink, timber and custom fencing installations.</p>
+          </div>
+        </div>
+
+        <div class="card service">
+          <div class="icon">PW</div>
+          <div>
+            <h3>Partition Walls</h3>
+            <p class="muted">Office and interior partition installation.</p>
+          </div>
+        </div>
+
+        <div class="card service">
+          <div class="icon">R</div>
+          <div>
+            <h3>Renovations & Repairs</h3>
+            <p class="muted">Refurbishment, repairs and internal/external finishes.</p>
+          </div>
+        </div>
+
+        <div class="card service">
+          <div class="icon">F&amp;E</div>
+          <div>
+            <h3>Finishes & Design</h3>
+            <p class="muted">Design and finishing services to make spaces functional and attractive.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:22px">Supply of Goods & Services</h3>
+      <div class="grid cols-2" style="margin-top:12px">
+        <div class="card">
+          <h4>Supply of Furniture</h4>
+          <p class="muted">Office and reception furniture delivered and installed.</p>
+        </div>
+        <div class="card">
+          <h4>Health & Safety Equipment</h4>
+          <p class="muted">PPE and site safety equipment sourced for projects.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:22px">Professional Services</h3>
+      <div class="grid cols-2" style="margin-top:12px">
+        <div class="card">
+          <h4>BOQ & Quantity Measurement</h4>
+          <p class="muted">Accurate bill of quantities and material takeoffs for precise budgeting.</p>
+        </div>
+        <div class="card">
+          <h4>Quantity Surveying</h4>
+          <p class="muted">Cost planning, value engineering and quantity surveying related services.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="structure" class="container">
+      <h2>Organisational Structure</h2>
+      <div class="card">
+        <p class="muted">Our team includes Project Managers, Site Agents, Quantity Surveyors, Safety Officers, Admin and Foremen — delivering projects with clear roles and responsibilities.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <h2>Recent Projects</h2>
+      <div class="grid projects cols-3" style="margin-top:12px">
+        <div class="card"><img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=60" alt="Project 1"/><h4>Residential Extension</h4><p class="muted">Extension and interior finishes.</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1532372322013-1c8f8c3c8b06?auto=format&fit=crop&w=1200&q=60" alt="Project 2"/><h4>Commercial Fitout</h4><p class="muted">Office partitioning and finishes.</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1200&q=60" alt="Project 3"/><h4>Site Preparations</h4><p class="muted">Civil works and groundwork.</p></div>
+      </div>
+    </section>
+
+    <section id="ceo" class="container">
+      <h2>Founder & CEO</h2>
+      <div class="card" style="display:grid;grid-template-columns:140px 1fr;gap:18px;align-items:center">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=60" alt="CEO Nolukhanyo Ngceni" style="width:140px;height:140px;object-fit:cover;border-radius:8px;"/>
+        <div>
+          <h3>Nolukhanyo Ngceni — Founder & CEO</h3>
+          <p class="muted">Nolukhanyo Ngceni founded Giwu Construction in 2021. She holds an Advanced Diploma in Quantity Surveying (NQF L7), an Advanced Diploma in Construction Health & Safety (NQF L7), a Diploma in Building (NQF L6), NCV L4 in Civil Engineering and Building Construction, and now an NQF 8 Postgraduate Diploma in Construction. Nolukhanyo brings both academic excellence and on-site experience to every project.</p>
+          <p class="muted"><strong>Achievements & Trust</strong>: Nolukhanyo was one of the top students selected by Walter Sisulu University to attend the SACQSP conference and has strong credentials in quantity surveying and safety management. Giwu Construction is 100% black woman owned and operates with strict compliance to safety and quality standards — making us a reliable partner for both public and private sector projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-contact" class="container">
+      <div class="card">
+        <h2>Contact Us</h2>
+        <p class="muted">For quotes, enquiries or to discuss a project, contact us:</p>
+        <ul class="contact-list">
+          <li><strong>Phone:</strong> +27 71 340 4384</li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/27621949803">+27 62 194 9803</a></li>
+          <li><strong>Email:</strong> <a href="mailto:giwuc.office@gmail.com">giwuc.office@gmail.com</a></li>
+          <li><strong>Address:</strong> 119 Voortrekker Rd, Parow, Cape Town, 7500</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© 2025 Giwu Construction (Ltd) Pty</div>
+        <div style="font-size:13px;color:#cbd5e1">Committed to safety, quality & delivery • <a href="#contact" style="color:inherit;text-decoration:underline">Get a quote</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a.navlink').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'})}));
+    // Quote form demo: open mailto
+    document.getElementById('quoteForm')?.addEventListener('submit', function(e){
+      e.preventDefault();
+      const form = new FormData(this);
+      const obj = {};
+      form.forEach((v,k)=>obj[k]=v);
+      const subject = encodeURIComponent('Quote request from ' + (obj.name||'') );
+      const body = encodeURIComponent(JSON.stringify(obj,null,2));
+      window.location.href = 'mailto:giwuc.office@gmail.com?subject='+subject+'&body='+body;
+    });
+  </script>
+</body>
+</html>
