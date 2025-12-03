@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Giwu Construction (Ltd) Pty</title>
+  <meta name="description" content="Giwu Construction — Building, Civil, Fencing, Renovations, Supply of goods & professional quantity surveying services." />
+  <!-- FAVICON (place /images/logo.png in repo) -->
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+
+  <style>
+    :root{
+      --bg:#f5f1ef;       /* soft brownish-neutral */
+      --muted:#6b7280;
+      --giwu-green:#1a4636; /* deep blue-green */
+      --gold:#c59d3f;     /* gold */
+      --dark:#2b2b2b;     /* dark grey */
+      --merun:#7a2b2b;    /* merun accent */
+      --card:#ffffff;
+      --maxw:1100px;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111;-webkit-font-smoothing:antialiased;}
+    header{background:linear-gradient(90deg,var(--dark),#0f1a1a);color:white;padding:12px 0}
+    .container{max-width:var(--maxw);margin:0 auto;padding:18px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo-small{width:60px;height:60px;border-radius:8px;background:var(--giwu-green);display:flex;align-items:center;justify-content:center;color:var(--gold);font-weight:900;font-size:20px}
+    nav{margin-left:auto}
+    a.navlink{color:#fff;text-decoration:none;margin-left:14px;font-weight:700}
+
+    /* HERO */
+    .hero {
+      min-height:380px;
+      display:flex;
+      align-items:center;
+      color:white;
+      position:relative;
+      overflow:hidden;
+    }
+    .hero::before{
+      content:"";
+      position:absolute; inset:0;
+      background:linear-gradient(180deg, rgba(10,10,10,0.45), rgba(10,10,10,0.55));
+      z-index:1;
+    }
+    .hero-inner{position:relative; z-index:2; display:flex; gap:20px; align-items:center; width:100%;}
+    .hero-left{flex:1;padding:48px}
+    .hero-logo{height:84px; margin-bottom:18px}
+    .hero h1{font-size:40px;margin:0 0 12px 0; line-height:1.05}
+    .hero p.lead{color:#e8efe9; max-width:680px}
+    .cta-row{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn-primary{background:var(--giwu-green); color:var(--gold); padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:800}
+    .btn-ghost{background:transparent;border:2px solid rgba(255,255,255,0.14);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none}
+
+    /* sections */
+    section{padding:36px 16px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 20px rgba(18,18,18,0.06)}
+    .grid{display:grid;gap:18px}
+    .cols-3{grid-template-columns:repeat(3,1fr)}
+    .cols-2{grid-template-columns:repeat(2,1fr)}
+    .service{display:flex;gap:12px;align-items:flex-start}
+    .service .icon{width:56px;height:56;border-radius:8px;background:#eef6ef;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--giwu-green)}
+    .muted{color:var(--muted)}
+    .projects img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+
+    footer{background:var(--dark);color:#d1e7da;padding:24px;text-align:center}
+
+    /* contact */
+    .contact-list{list-style:none;padding:0;margin:0}
+    .contact-list li{margin-bottom:8px}
+
+    /* floating WhatsApp button */
+    .wa-float {
+      position:fixed;
+      bottom:22px;
+      right:22px;
+      background:#25D366;
+      width:56px;
+      height:56px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 8px 20px rgba(0,0,0,0.25);
+      z-index:9999;
+    }
+    .wa-float img{width:28px;height:28px}
+
+    @media(min-width:900px){
+      .hero{min-height:480px}
+      .hero-inner{padding-left:24px; padding-right:24px}
+      .hero-left{padding:64px}
+      .hero h1{font-size:52px}
+      .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+      .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="wa-float" href="https://wa.me/27621949803" target="_blank" aria-label="WhatsApp">
+    <!-- use the included svg/png link or your own icon -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"/>
+  </a>
+
+  <!-- header -->
+  <header>
+    <div class="container" style="display:flex;align-items:center;gap:12px;">
+      <!-- logo on the left (file: /images/logo.png) -->
+      <div style="display:flex;align-items:center;gap:12px;">
+        <img src="/images/logo.png" alt="Giwu Construction" style="height:64px"/>
+        <div style="color:#fff">
+          <div style="font-weight:900; font-size:18px;">Giwu Construction (Ltd) Pty</div>
+          <div style="font-size:12px;color:rgba(209,231,218,0.9)">Quality • Safety • Delivery</div>
+        </div>
+      </div>
+
+      <nav style="margin-left:auto">
+        <a class="navlink" href="#home">Home</a>
+        <a class="navlink" href="#about">About</a>
+        <a class="navlink" href="#vision">Vision</a>
+        <a class="navlink" href="#services">Services</a>
+        <a class="navlink" href="#structure">Org</a>
+        <a class="navlink" href="#projects">Projects</a>
+        <a class="navlink" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero" style="background:url('/images/hero.jpg') center/cover no-repeat;">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <img src="/images/logo.png" alt="Giwu logo" class="hero-logo"/>
+        <h1>Building with Precision & Integrity</h1>
+        <p class="lead">Quality Construction • Civil Works • Renovations • Site Preparation — 100% black woman-owned, BBBEE Level 1.</p>
+        <div class="cta-row">
+          <a class="btn-primary" href="#contact">Request a Quote</a>
+          <a class="btn-ghost" href="mailto:giwuc.office@gmail.com">Email Us</a>
+        </div>
+      </div>
+      <!-- right column: two small info cards -->
+      <div style="width:340px; display:flex; flex-direction:column; gap:12px;">
+        <div class="card">
+          <strong style="color:var(--giwu-green)">Compliance & Safety</strong>
+          <div class="muted" style="margin-top:8px">Certified H&S staff and insurance-backed operations.</div>
+        </div>
+        <div class="card">
+          <strong style="color:var(--gold)">Accurate BOQs</strong>
+          <div class="muted" style="margin-top:8px">Transparent quotes and professional quantity surveying services.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="container">
+    <div class="card">
+      <h2>About Giwu Construction</h2>
+      <p class="muted">Founded in 2021 by Nolukhanyo, Giwu Construction brings together expertise in project management, quantity surveying, construction health & safety, and on-site supervision. We manage projects efficiently and deliver excellent value while maintaining the highest standards of safety and compliance.</p>
+    </div>
+  </section>
+
+  <!-- VISION / MISSION -->
+  <section id="vision" class="container">
+    <div class="card">
+      <h2>Vision, Mission & Values</h2>
+      <h3>Vision</h3>
+      <p class="muted">Developing, building, and servicing South Africa's requirements for better living and working conditions.</p>
+      <h3>Mission</h3>
+      <p class="muted">To manage projects efficiently and effectively while prioritising safety and client satisfaction.</p>
+      <h3>Values</h3>
+      <p class="muted">Integrity • Passion • Commitment • Transparency</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="container">
+    <h2>Our Services</h2>
+    <div class="grid cols-3" style="margin-top:12px">
+      <div class="card service">
+        <div class="icon">BC</div>
+        <div>
+          <h3>Building Construction</h3>
+          <p class="muted">Complete residential and commercial building projects from foundation to finish.</p>
+        </div>
+      </div>
+
+      <div class="card service">
+        <div class="icon">CC</div>
+        <div>
+          <h3>Civil Construction</h3>
+          <p class="muted">Earthworks, site preparation, drainage and other civil works.</p>
+        </div>
+      </div>
+
+      <div class="card service">
+        <div class="icon">F</div>
+        <div>
+          <h3>Fencing Construction</h3>
+          <p class="muted">Palisade, chainlink, timber and custom fencing installations.</p>
+        </div>
+      </div>
+
+      <div class="card service">
+        <div class="icon">PW</div>
+        <div>
+          <h3>Partition Walls</h3>
+          <p class="muted">Office and interior partition installation.</p>
+        </div>
+      </div>
+
+      <div class="card service">
+        <div class="icon">R</div>
+        <div>
+          <h3>Renovations & Repairs</h3>
+          <p class="muted">Refurbishment, repairs and internal/external finishes.</p>
+        </div>
+      </div>
+
+      <div class="card service">
+        <div class="icon">F&amp;E</div>
+        <div>
+          <h3>Finishes & Design</h3>
+          <p class="muted">Design and finishing services to make spaces functional and attractive.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:22px">Supply of Goods & Services</h3>
+    <div class="grid cols-2" style="margin-top:12px">
+      <div class="card">
+        <h4>Supply of Furniture</h4>
+        <p class="muted">Office and reception furniture delivered and installed.</p>
+      </div>
+      <div class="card">
+        <h4>Health & Safety Equipment</h4>
+        <p class="muted">PPE and site safety equipment sourced for projects.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:22px">Professional Services</h3>
+    <div class="grid cols-2" style="margin-top:12px">
+      <div class="card">
+        <h4>BOQ & Quantity Measurement</h4>
+        <p class="muted">Accurate bill of quantities and material takeoffs for precise budgeting.</p>
+      </div>
+      <div class="card">
+        <h4>Quantity Surveying</h4>
+        <p class="muted">Cost planning, value engineering and quantity surveying related services.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORG STRUCTURE (visual) -->
+  <section id="structure" class="container">
+    <h2>Organisational Structure</h2>
+    <div class="card">
+      <div class="grid cols-3" style="text-align:center; margin-top:12px">
+        <div>
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=300&q=60" style="width:100%;height:160px;object-fit:cover;border-radius:8px" />
+          <h4>Project Manager</h4>
+          <p class="muted">Oversees planning & execution</p>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1581090121273-4c1e1a2c8f20?auto=format&fit=crop&w=300&q=60" style="width:100%;height:160px;object-fit:cover;border-radius:8px" />
+          <h4>Quantity Surveyor</h4>
+          <p class="muted">Cost control & BOQ</p>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1597589831374-ea3dc0d38bae?auto=format&fit=crop&w=300&q=60" style="width:100%;height:160px;object-fit:cover;border-radius:8px" />
+          <h4>Site Foreman</h4>
+          <p class="muted">Supervises on-site operations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="container">
+    <h2>Recent Projects</h2>
+    <div class="grid projects cols-3" style="margin-top:12px">
+      <div class="card"><img src="https://images.unsplash.com/photo-1600585153490-76fb20a32601?auto=format&fit=crop&w=1200&q=60" alt="Residential Extension"/><h4>Residential Extension</h4><p class="muted">Structural extension under construction.</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=60" alt="Site Preparation"/><h4>Site Preparation</h4><p class="muted">Groundwork and excavation in progress.</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1541888634-ff6c6a65f62e?auto=format&fit=crop&w=1200&q=60" alt="Civil Works"/><h4>Civil Works</h4><p class="muted">Pavement and drainage under construction.</p></div>
+    </div>
+  </section>
+
+  <!-- CEO -->
+  <section id="ceo" class="container">
+    <h2>Founder & CEO</h2>
+    <div class="card" style="display:grid;grid-template-columns:140px 1fr;gap:18px;align-items:center">
+      <!-- upload your CEO photo to /images/ceo.jpg -->
+      <img src="/images/ceo.jpg" alt="CEO Nolukhanyo" style="width:140px;height:140px;object-fit:cover;border-radius:8px;"/>
+      <div>
+        <h3>Nolukhanyo — Founder & CEO</h3>
+        <p class="muted">Nolukhanyo is the founder and CEO of Giwu Construction. She holds an Advanced Diploma in Quantity Surveying (NQF L7), Advanced Diploma in Construction Health & Safety (NQF L7), Diploma in Building (NQF L6), NCV L4 Civil Engineering & Building Construction, and an NQF 8 Postgraduate Diploma in Construction. She also has strong academic and practical experience in project management, bringing leadership and technical excellence to every project.</p>
+        <p class="muted"><strong>Trust & Experience:</strong> Her multidisciplinary background in construction, safety, quantity surveying, and project management positions her as a reliable leader capable of delivering high-standard results with transparency, precision, and commitment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container">
+    <div class="card">
+      <h2>Contact Us</h2>
+      <p class="muted">For quotes, enquiries or to discuss a project, contact us:</p>
+      <ul class="contact-list">
+        <li><strong>Phone:</strong> +27 71 340 4384</li>
+        <li><strong>WhatsApp:</strong> <a href="https://wa.me/27621949803">+27 62 194 9803</a></li>
+        <li><strong>Email:</strong> <a href="mailto:giwuc.office@gmail.com">giwuc.office@gmail.com</a></li>
+        <li><strong>Address:</strong> 119 Voortrekker Rd, Parow, Cape Town, 7500</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER: includes logo -->
+  <footer style="background:#2b2b2b; color:white; padding:30px 10px; text-align:center; border-top:4px solid var(--gold);">
+    <div style="display:flex;align-items:center;gap:12px;justify-content:center;flex-wrap:wrap">
+      <img src="/images/logo.png" alt="Giwu logo" style="height:56px;"/>
+      <div style="color:#fff">© 2025 Giwu Construction (Ltd) Pty — Committed to safety, quality & delivery</div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a.navlink').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'})}));
+  </script>
+</body>
+</html>
